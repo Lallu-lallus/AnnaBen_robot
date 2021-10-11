@@ -1,5 +1,5 @@
 {
-    "name": "Media Search bot",
+    "name": "ALPHA-AUTO-FILTER-BOT",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
@@ -14,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/subinps/Media-Search-bot",
-    "repository": "https://github.com/subinps/Media-Search-bot",
+    "website": "https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT",
+    "repository": "https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
