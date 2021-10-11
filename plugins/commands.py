@@ -7,7 +7,7 @@ from utils import Media, get_file_details, get_size
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 PHOTO = [
-    "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg
+    "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg"
 ]
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
