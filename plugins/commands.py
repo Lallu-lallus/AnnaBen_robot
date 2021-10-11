@@ -112,6 +112,19 @@ async def start(bot, cmd):
         )
 
 
+reply_markup = InlineKeyboardMarkup(buttons)
+await bot.send_photo(
+chat_id=update.chat.id,
+photo=f"{random.choice (PHOTO)}"
+caption=Translation.START_TEXT.format(
+update.from_user.first_name),
+reply_markup=reply_markup,
+parse_mode="html",
+reply_to_message_id=update.message_id
+)
+PHOTO = [
+    "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg"
+]
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
     """Send basic information of channel"""
