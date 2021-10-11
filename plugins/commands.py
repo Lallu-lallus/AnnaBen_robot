@@ -1,4 +1,6 @@
 import os
+import time
+import random
 import logging
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -6,9 +8,25 @@ from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
 from utils import Media, get_file_details, get_size
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
+
 PHOTO = [
     "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg"
 ]
+
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
+async def broadcast(bot, message):
+ if (message.reply_to_message):
+   ms = await message.reply_text("Geting All ids from database ...........")
+   ids = getid()
+   tot = len(ids)
+   await ms.edit(f"Starting Broadcast .... \n Sending Message To {tot} Users")
+   for id in ids:
+     try:
+     	await message.reply_to_message.copy(id)
+     except:
+     	pass
+
+
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
@@ -94,10 +112,9 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_text(
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await cmd.reply_photo(
+            photo=f"{random.choice(PHOTO)}",
+            caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -112,19 +129,6 @@ async def start(bot, cmd):
         )
 
 
-reply_markup = InlineKeyboardMarkup(buttons)
-await bot.send_photo(
-chat_id=update.chat.id,
-photo=f"{random.choice (PHOTO)}"
-caption=Translation.START_TEXT.format(
-update.from_user.first_name),
-reply_markup=reply_markup,
-parse_mode="html",
-reply_to_message_id=update.message_id
-)
-PHOTO = [
-    "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg"
-]
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
     """Send basic information of channel"""
