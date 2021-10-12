@@ -122,7 +122,7 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("😎 About", callback_data"about")
+                        InlineKeyboardButton("😎 About", callback_data="about")
                     ],
                     [
                         InlineKeyboardButton("1 Dev", url="https://t.me/tg_bots_updates"),
