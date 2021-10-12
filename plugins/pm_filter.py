@@ -128,6 +128,7 @@ async def group(client, message):
             return
         if not btn:
             return
+
             if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
