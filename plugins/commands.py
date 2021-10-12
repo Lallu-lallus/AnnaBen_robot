@@ -125,8 +125,8 @@ async def start(bot, cmd):
                         InlineKeyboardButton("😎 About", callback_data="about")
                     ],
                     [
-                        InlineKeyboardButton("1 Dev", url="https://t.me/tg_bots_updates"),
-                        InlineKeyboardButton("2 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1")
+                        InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
+                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
                     ],
                     [
                         InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Filesharearianarobot?startgroup=true")
