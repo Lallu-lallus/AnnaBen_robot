@@ -118,11 +118,18 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍search Here🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("🤖Other Bots🤖", url="https://t.me/tg_bots_updates")
+                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("😎 About", callback_data"about")
+                    ],
+                    [
+                        InlineKeyboardButton("1 Dev", url="https://t.me/tg_bots_updates"),
+                        InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Filesharearianarobot?startgroup=true")
                     ]
                 ]
             )
