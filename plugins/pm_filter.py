@@ -125,15 +125,18 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
         else:
+              Send_message = await bot.send_photo( 
+                  chat_id=update.chat.id,
+                  photo="https://telegra.ph/file/eabeaf432b58f129ea2b4.jpg",
+                  caption="<b>Couldn't Find This Movie.Try Again..! ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
+                  reply_to_message_id=update.message_id 
+             ) 
+                  await asyncio.sleep(5) 
+                  await Send_message.delete()
+        else:
             return
         if not btn:
             return
-        else:
-              Send_message = await bot.send_photo( chat_id=update.chat.id,
-              photo="https://telegra.ph/file/eabeaf432b58f129ea2b4.jpg",
-              caption="<b>Couldn't Find This Movie.Try Again..! ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", reply_to_message_id=update.message_id ) 
-                  await asyncio.sleep(5) 
-                  await Send_message.delete()
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
