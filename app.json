@@ -50,7 +50,7 @@
         },
         "START_MSG": {
             "description": "Welcome message for start command",
-            "value": "**Hi, I'm [Media Search Bot](https://github.com/subinps/Media-Search-bot) or you can call me as Auto-Filter Bot**\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.",
+            "value": "**Hi, I'm a single auto filter botAdd me to your group and make me an admin and then see my pevers🌟😜",
             "required": false
         },
         "USE_CAPTION_FILTER": {
