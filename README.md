@@ -13,7 +13,7 @@
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT)
+[![Deploy](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT)](https://www.herokucdn.com/deploy/button.svg)
 ### Hard Way
 
 ```bash
