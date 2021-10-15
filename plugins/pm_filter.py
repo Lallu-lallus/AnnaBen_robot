@@ -55,7 +55,7 @@ async def filter(client, message):
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                result.append([
+                btn.append([
              
                 InlineKeyboardButton("📂 " + file_name, url=file_link),
 
@@ -125,7 +125,7 @@ async def group(client, message):
             for file in files:
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                result.append([
+                btn.append([
              
                 InlineKeyboardButton("📂 " + file_name, url=file_link),
 
