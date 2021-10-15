@@ -52,12 +52,13 @@ async def filter(client, message):
         search = message.text
         files = await get_filter_results(query=search)
         if files:
-            for file in files:
-                file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
-                    )
+            results.append([
+
+            InlineKeyboardButton("📂 " + file_name, url=file_link),
+
+            InlineKeyboardButton(file_size, url=file_link)]
+
+        )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
