@@ -61,7 +61,7 @@ async def filter(client, message):
 
                 InlineKeyboardButton(file_size, url=file_link)]
 
-           )
+            )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
@@ -131,7 +131,7 @@ async def group(client, message):
 
                 InlineKeyboardButton(file_size, url=file_link)]
 
-           )
+            )
         else:
             return
         if not btn:
