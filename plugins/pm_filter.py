@@ -119,12 +119,13 @@ async def group(client, message):
             BOT["username"]=nyva
         files = await get_filter_results(query=search)
         if files:
-            for file in files:
-                file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
-                btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
-                )
+            results.append([
+
+            InlineKeyboardButton("📂 " + file_name, url=file_link),
+
+            InlineKeyboardButton(file_size, url=file_link)]
+
+        )
         else:
             return
         if not btn:
@@ -347,4 +348,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("Entha mone sammiyo nee 😂 nokaknda onnum kittalla po😂",show_alert=True)
+        await query.answer("Entha mone sammiyo nee 😂 nokaknda onnum kittilla po😂",show_alert=True)
