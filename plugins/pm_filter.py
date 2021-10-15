@@ -52,13 +52,16 @@ async def filter(client, message):
         search = message.text
         files = await get_filter_results(query=search)
         if files:
-            results.append([
+            for file in files:
+                file_id = file.file_id
+                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                result.append([
+             
+                InlineKeyboardButton("📂 " + file_name, url=file_link),
 
-            InlineKeyboardButton("📂 " + file_name, url=file_link),
+                InlineKeyboardButton(file_size, url=file_link)]
 
-            InlineKeyboardButton(file_size, url=file_link)]
-
-        )
+           )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
@@ -119,13 +122,16 @@ async def group(client, message):
             BOT["username"]=nyva
         files = await get_filter_results(query=search)
         if files:
-            results.append([
+            for file in files:
+                file_id = file.file_id
+                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                result.append([
+             
+                InlineKeyboardButton("📂 " + file_name, url=file_link),
 
-            InlineKeyboardButton("📂 " + file_name, url=file_link),
+                InlineKeyboardButton(file_size, url=file_link)]
 
-            InlineKeyboardButton(file_size, url=file_link)]
-
-        )
+           )
         else:
             return
         if not btn:
