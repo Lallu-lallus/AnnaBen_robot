@@ -1,4 +1,4 @@
-#credits - @subin_PS @Joel_TG
+#credits - @pro_editor_tg @Joel_TG
 import os
 import time
 import random
