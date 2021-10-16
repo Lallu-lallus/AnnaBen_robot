@@ -1,5 +1,5 @@
 #Kanged From @TroJanZheX
-#Credits *Subin PS , @Joel_TG*
+#Credits *@pro_editor_tg , @Joel_TG*
 from info import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
