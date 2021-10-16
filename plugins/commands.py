@@ -1,3 +1,4 @@
+#credits - @subin_PS @Joel_TG
 import os
 import time
 import random
@@ -8,6 +9,10 @@ from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
 from utils import Media, get_file_details, get_size
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
+
+#photo code kanged from @codes4ya Channel !
+#Add atleast 10+ Telegraph Links below 👇
+
 start message = 
 PHOTO = [
     "https://telegra.ph/file/ccc3a1dfc540f9b7b3059.jpg"
