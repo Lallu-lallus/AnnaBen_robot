@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 #photo code kanged from @codes4ya Channel !
 #Add atleast 10+ Telegraph Links below 👇
 
-start message = 
+
 PHOTO = [
     "https://telegra.ph/file/ccc3a1dfc540f9b7b3059.jpg",
 ]
