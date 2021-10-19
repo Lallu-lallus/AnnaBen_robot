@@ -8,7 +8,7 @@ import string
 import time
 import traceback
 
-import aiofiles
+import autofiles
 from pyrogram.errors import (
     FloodWait,
     InputUserDeactivated,
