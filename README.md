@@ -1,6 +1,6 @@
 # ALPHA-AUTO-FILTER-BOT
 Very Sempil Bot Auto Wellcome Bot V2
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Type+messages+everywhere!;Add+a+bio+to+your+profile!)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Alpha-Auto-Filter-Bot!;created+by+Alpha+Admin+Lallu+Lallus!;A+simple+simple+autofilter+Bot!)
 </p>
 </p>
 <img src="https://telegra.ph/file/080538bf9bad4e0d208ca.jpg" alt="JPG" width="300" height="250"/>
