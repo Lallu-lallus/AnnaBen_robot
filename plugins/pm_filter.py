@@ -90,7 +90,7 @@ async def filter(client, message):
                 await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>requested from : <b>{mention}<\b> 👇നിങ്ങൾ ചോദിച്ച മൂവി ലഭിക്കാൻ താഴെ കാണുന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക😇 {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>requested from : <b>{}<\b> 👇നിങ്ങൾ ചോദിച്ച മൂവി ലഭിക്കാൻ താഴെ കാണുന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക😇 {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
