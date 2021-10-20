@@ -7,6 +7,8 @@ Very Sempil Bot Auto Filter bot
 </p>
 ## Added Features
 * Imdb posters for autofilter.
+*Double filter button.
+*Start message with pic
 * Custom captions for your files.
 * Index command to index all the files in a given channel (No USER_SESSION Required).
 * Ability to Index Public Channels without being admin.
