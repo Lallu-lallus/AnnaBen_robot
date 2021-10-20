@@ -1,5 +1,5 @@
 # ALPHA-AUTO-FILTER-BOT
-Very Sempil Bot Auto Wellcome Bot V2
+Very Sempil Bot Auto Filter bot
 ##![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Alpha-Auto-Filter-Bot!;created+by+Alpha+Admin+Lallu+Lallus!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
 </p>
 </p>
