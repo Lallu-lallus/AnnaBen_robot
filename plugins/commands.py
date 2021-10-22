@@ -24,9 +24,9 @@ PHOTO = [
     "https://telegra.ph/file/5fc1c6e2fdcd41db1772a.jpg",
     "https://telegra.ph/file/e37fcf0c532b95a8dfb91.jpg",
     "https://telegra.ph/file/96438c4d4c4b9a78505b9.jpg"'
-    "https://telegra.ph/file/56377c45b58f2d5121c28.jpg",
-]
+    "https://telegra.ph/file/56377c45b58f2d5121c28.jpg"
 
+]
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
  if (message.reply_to_message):
