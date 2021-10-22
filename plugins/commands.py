@@ -135,7 +135,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
                     ],
                     [
-                        InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT"),
                         InlineKeyboardButton("😎 About", callback_data="about")
                     ],
                     [
