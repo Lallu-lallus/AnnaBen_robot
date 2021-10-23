@@ -1,5 +1,5 @@
 {
-    "name": "ALPHA-AUTO-FILTER-BOT",
+    "name": "ALPHA_IMDB_BOT",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "logo": "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT",
-    "repository": "https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT",
+    "website": "https://github.com/Lallu-lallus/ALPHA_IMDB_BOT",
+    "repository": "https://github.com/Lallu-lallus/ALPHA_IMDB_BOT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
