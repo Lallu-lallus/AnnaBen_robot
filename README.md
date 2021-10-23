@@ -1,4 +1,4 @@
-# ALPHA-AUTO-FILTER-BOT
+# ALPHA_IMDB_BOT
 Very Sempil Bot Auto Filter bot
 ##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Alpha-Auto-Filter-Bot!;created+by+Alpha+Admin+Lallu+Lallus!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
 </p>
@@ -19,7 +19,7 @@ Very Sempil Bot Auto Filter bot
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA_IMDB_BOT)
 ### Hard Way
 
 ```bash
@@ -82,7 +82,7 @@ logger - Get log file
 
 ## Thanks to 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
-* Original [Repo](https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT)
+* Original [Repo](https://github.com/Lallu-lallus/ALPHA_IMDB_BOT)
 
 
 ## Support
