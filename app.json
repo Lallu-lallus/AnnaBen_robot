@@ -50,7 +50,8 @@
         },
         "START_MSG": {
             "description": "Welcome message for start command",
-            "value": "**Hi, I'm a single auto filter botAdd me to your group and make me an admin and then see my pevers🌟😜",
+            "value": "**👋Hey{query.from_user.mention} 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 ANNA BEN , 𝙸 𝙲𝙰𝙽 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙻𝙻 𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙸𝚃 𝙴𝙰𝚂𝚈 ,
+𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙰𝚂 𝙰𝙳𝙼𝙸𝙽 😍",
             "required": false
         },
         "USE_CAPTION_FILTER": {
