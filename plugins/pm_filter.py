@@ -152,7 +152,7 @@ async def group(client, message):
 
 <b>Please Go to Google and Confirm the Correct Spelling 🙏</b>
 
-<b>Click Here To 👉 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>
+<b>Click Here To 👉 <a href='https://www.google.com/search'>🔍 Search 🔎</a> </b>
 
 <b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File :- @admins</b>""",
             
