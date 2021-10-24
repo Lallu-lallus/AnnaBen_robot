@@ -36,7 +36,7 @@ default_start_msg = """
 
 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ :a href="https://t.me/Pro_editor_tg">Lallu-llalus </a>
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ :<a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
