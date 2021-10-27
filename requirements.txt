@@ -8,3 +8,4 @@ pyromod
 requests
 parse-torrent-name
 heroku3
+dnspython
