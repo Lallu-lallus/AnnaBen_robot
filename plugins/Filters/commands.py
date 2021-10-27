@@ -16,7 +16,7 @@ else:
     from config import Config
 
 from script import Script
-from plugins.helpers import humanbytes
+from plugins.Filters.helpers import humanbytes
 from database.filters_mdb import filter_stats
 from database.users_mdb import add_user, find_user, all_users
 
