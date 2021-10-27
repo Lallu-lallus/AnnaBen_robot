@@ -31,8 +31,7 @@ PHOTO = [
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
  if (message.reply_to_message):
-   ms = await message.reply_text("Geting All ids from database ...........")
-   ids = getid(ids)
+
    tot = len(ids)
    await ms.edit(f"Starting Broadcast .... \n Sending Message To {tot} Users")
    for id in ids:
