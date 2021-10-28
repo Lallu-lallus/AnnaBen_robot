@@ -241,3 +241,26 @@ async def bot_info(bot, message):
         ]
     await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT'>Click here</a>\nUpdate Channel : <a href='https://t.me/tg_bots_updates'>ALPH_BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT'>Click here</a>\nUpdate Channel : <a href='https://t.me/tg_bots_updates'>ALPH_BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+@Client.on_message(filters.command('id') & (filters.private | filters.group))
+async def showid(client, message):
+    chat_type = message.chat.type
+
+    if chat_type == "private":
+        user_id = message.chat.id
+        await message.reply_text(
+            f"Your ID : `{user_id}`",
+            parse_mode="md",
+            quote=True
+        )
+    elif (chat_type == "group") or (chat_type == "supergroup"):
+        user_id = message.from_user.id
+        chat_id = message.chat.id
+        if message.reply_to_message:
+            reply_id = f"Replied User ID : `{message.reply_to_message.from_user.id}`"
+        else:
+            reply_id = ""
+        await message.reply_text(
+            f"Your ID : `{user_id}`\nThis Group ID : `{chat_id}`\n\n{reply_id}",
+            parse_mode="md",
+            quote=True
+        )  
