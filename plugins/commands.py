@@ -237,13 +237,25 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT'>Click here</a>\nUpdate Channel : <a href='https://t.me/tg_bots_updates'>ALPH_BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-@Client.on_message(filters.command('id'))
-await update.reply_text(  
+    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT'>Click here</a>\nUpdate Channel : <a href='https://t.me/tg_bots_updates'>ALPH_BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+@Client.message_handler(commands="id")
 
-        text=(update.from_user.first_name, last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),             
+async def cmd_id(message: types.Message):
 
-        disable_web_page_preview=True,
+    """
 
-        reply_markup=reply_markup
+    /id command handler for all chats
 
-    )
+    :param message: Telegram message with "/id" command
+
+    """
+
+    if message.chat.id == message.from_user.id:
+
+        await message.answer(f"Your Telegram ID is <code>{message.from_user.id}</code>")
+
+    else:
+
+        await message.answer(f"This {message.chat.type} chat ID is <code>{message.chat.id}</code>")
+
+    logs.track("/id")
