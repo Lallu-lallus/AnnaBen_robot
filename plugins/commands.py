@@ -136,17 +136,17 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
                     ],
                     [
                         InlineKeyboardButton("©️CHANNEL", url="https://t.me/tg_bots_updates"),
                         InlineKeyboardButton("♻️GROUP", url="https://t.me/EDIT_REPO")
                     ],
                     [
-                        InlineKeyboardButton("®️𝕯𝖊𝖛", url="https://t.me/pro_editor_tg")
+                        InlineKeyboardButton("ᗪ乇ᐯ", url="https://t.me/pro_editor_tg")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
+                        InlineKeyboardButton("❔How to use me❔", url="https://t.me/tg_bots_updates/55")
                     ]
                 ]
             )
