@@ -252,8 +252,7 @@ async def cmd_id(message: types.Message):
     /id command handler for all chats
 
     :param message: Telegram message with "/id" command
-
-    """
+     """
 
     if message.chat.id == message.from_user.id:
 
