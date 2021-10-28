@@ -9,3 +9,4 @@ requests
 parse-torrent-name
 heroku3
 dnspython
+aiogram==2.12.1
