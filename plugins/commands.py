@@ -3,8 +3,8 @@ import os
 import time
 import random
 import logging
-from os import getenv
-from aiogram import Bot, Dispatcher, executor, types
+
+
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
@@ -30,9 +30,8 @@ PHOTO = [
 
 ]
 
-bot = Bot(token=getenv("BOT_TOKEN"), parse_mode="HTML")
 
-Client = Dispatcher(bot)
+
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
  if (message.reply_to_message):
