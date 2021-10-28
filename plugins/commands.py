@@ -135,8 +135,8 @@ async def start(bot, cmd):
                         InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates")
                     ],
                     [
-                        InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA_IMDB_BOT"),
-                        InlineKeyboardButton("😎 About", callback_data="about")
+                        InlineKeyboardButton("©️CHANNEL", url="https://t.me/tg_bots_updates"),
+                        InlineKeyboardButton("♻️GROUP", url="https://t.me/EDIT_REPO")
                     ],
                     [
                         InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"),
