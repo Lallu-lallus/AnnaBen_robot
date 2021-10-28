@@ -123,7 +123,7 @@ async def group(client, message):
         btn = []
 
         search = message.text
-        result_txt = f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**🎧 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾:English, Malayalam\n\n**©️ Group by:- {message.chat.title}\n\n**💲 Production:N/A\n\n**💰 Box-Office : N/A\n\n**Ⓟ︎Ⓡ︎Ⓞ︎ Ⓣ︎Ⓘ︎Ⓟ︎Ⓢ︎:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁"
+        result_txt = f"**🎬 Title:** {search}\n\n**Thanks for:**<a href="tg://settings"> This person </a>\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**🎧 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾:English, Malayalam\n\n**©️ powerd by:- {message.chat.title}\n\n**💲 Production:N/A\n\n**💰 Box-Office : N/A\n\n**Ⓟ︎Ⓡ︎Ⓞ︎ Ⓣ︎Ⓘ︎Ⓟ︎Ⓢ︎:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
