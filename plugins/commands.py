@@ -143,7 +143,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("♻️GROUP", url="https://t.me/EDIT_REPO")
                     ],
                     [
-                        InlineKeyboardButton("1 Dev", url="https://t.me/pro_editor_tg")
+                        InlineKeyboardButton("®️𝕯𝖊𝖛", url="https://t.me/pro_editor_tg")
                     ],
                     [
                         InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true")
