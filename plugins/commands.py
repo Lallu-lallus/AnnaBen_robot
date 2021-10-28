@@ -237,3 +237,13 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Lallu-lallus/ALPHA-AUTO-FILTER-BOT'>Click here</a>\nUpdate Channel : <a href='https://t.me/tg_bots_updates'>ALPH_BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+@Client.on_message(filters.command('id'))
+await update.reply_text(  
+
+        text=(update.from_user.first_name, last_name, update.from_user.username, update.from_user.id, update.from_user.mention, update.from_user.dc_id, update.from_user.language_code, update.from_user.status),             
+
+        disable_web_page_preview=True,
+
+        reply_markup=reply_markup
+
+    )
