@@ -3,7 +3,7 @@ import os
 import time
 import random
 import logging
-
+from os import getenv
 from aiogram import Bot, Dispatcher, executor, types
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
