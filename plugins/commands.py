@@ -146,7 +146,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("ᗪ乇ᐯ", url="https://t.me/pro_editor_tg")
                     ],
                     [
-                        InlineKeyboardButton("Share me🥰", url="https://t.me/share/url?url=https://t.me/TGMovieRobot")
+                        InlineKeyboardButton("Share me🥰", url="https://t.me/share/url?url=https://t.me/Dqautofl_bot")
                     ]
                 ]
             )
