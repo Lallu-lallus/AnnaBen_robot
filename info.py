@@ -35,6 +35,8 @@ default_start_msg = """
 𝙸𝚃'𝚂 𝚅𝙴𝚁𝚈 𝙴𝙰𝚂𝚈. 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽, 𝚃𝙷𝙰𝚃𝚂 𝙰𝙻𝙻, 𝙸'𝙻𝙻 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 𝚃𝙷𝙴𝚁𝙴 🤓
 
 Hey <a href="https://t.me/Dqautofl_bot?startgroup=true"> add me to your grp and make me an admin </a>
+
+Send me /id and give your id and group id
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ©️MᴀɪɴᴛᴀɪɴᴇD Bʏ :<a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>
 """
