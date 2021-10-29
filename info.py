@@ -37,7 +37,7 @@ default_start_msg = """
 Hey <a href="https://t.me/Dqautofl_bot?startgroup=true"> add me to your grp and make me an admin </a>
 
 Send me /id and give your id and group id
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖➖➖
 ©️MᴀɪɴᴛᴀɪɴᴇD Bʏ :<a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
