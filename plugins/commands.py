@@ -260,7 +260,7 @@ async def showid(client, message):
         else:
             reply_id = ""
         await message.reply_text(
-            f"➲ User ID: `{user_id}`\nThis ➲ 𝖢𝗁𝖺𝗍 𝖨𝖣: `{chat_id}`\n\n{reply_id}",
+            f"➲ User ID: `{user_id}`\n ➲ 𝖢𝗁𝖺𝗍 𝖨𝖣: `{chat_id}`\n\n{reply_id}",
             parse_mode="md",
             quote=True
         )  
