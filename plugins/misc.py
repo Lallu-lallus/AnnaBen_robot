@@ -28,11 +28,15 @@ async def showid(client, message):
         )
         if message.reply_to_message:
             _id += (
-                "<b>➲ User ID</b>: "
-                f"<code>{message.from_user.id}</code>\n"
-                "<b>➲ Replied User ID</b>: "
-                f"<code>{message.reply_to_message.from_user.id}</code>\n"
-            )
+                <b>First name</b>: {message.from_user.first_name}
+<b>Last name</b>: {message.from_user.last_name}
+<b>Username</b>: {message.from_user.username}
+<b>Telegram id</b>: <code>{message.from_user.id}</code>
+<b>Phone number</b>: {message.from_user.phone_number}
+<b>Language</b>: {message.from_user.language_code}
+<b>Status</b>: {message.from_user.status}
+<b>Data center id</b>: {message.from_user.dc_id}"""
+)
             file_info = get_file_id(message.reply_to_message)
         else:
             _id += (
