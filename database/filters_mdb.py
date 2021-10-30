@@ -1,39 +1,114 @@
-from pyrogram import Client, filters
-from utils import temp
-from pyrogram.types import Message
-from database.users_chats_db import db
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from info import SUPPORT_CHAT
-async def banned_users(_, client, message: Message):
-    return (
-        message.from_user is not None or not message.sender_chat
-    ) and message.from_user.id in temp.BANNED_USERS
-
-banned_user = filters.create(banned_users)
-
-async def disabled_chat(_, client, message: Message):
-    return message.chat.id in temp.BANNED_CHATS
-
-disabled_group=filters.create(disabled_chat)
+import pymongo
+from info import DATABASE_URI, DATABASE_NAME
+ 
+myclient = pymongo.MongoClient(DATABASE_URI)
+mydb = myclient[DATABASE_NAME]
 
 
-@Client.on_message(filters.private & banned_user)
-async def ban_reply(bot, message):
-    ban = await db.get_ban_status(message.from_user.id)
-    await message.reply(f'Sorry Dude, You are Banned to use be. \nBan Reason: {ban["ban_reason"]}')
 
-@Client.on_message(filters.group & disabled_group)
-async def grp_bd(bot, message):
-    buttons = [[
-        InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
-    ]]
-    reply_markup=InlineKeyboardMarkup(buttons)
-    vazha = await db.get_chat(message.chat.id)
-    k = await message.reply(
-        text=f"CHAT NOT ALLOWED 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact support..\nReason : <code>{vazha['reason']}</code>.",
-        reply_markup=reply_markup)
+async def add_filter(grp_id, text, reply_text, btn, file, alert):
+    mycol = mydb[str(grp_id)]
+    # mycol.create_index([('text', 'text')])
+
+    data = {
+        'text':str(text),
+        'reply':str(reply_text),
+        'btn':str(btn),
+        'file':str(file),
+        'alert':str(alert)
+    }
+
     try:
-        await k.pin()
+        mycol.update_one({'text': str(text)},  {"$set": data}, upsert=True)
+    except:
+        print('Couldnt save, check your db')
+             
+     
+async def find_filter(group_id, name):
+    mycol = mydb[str(group_id)]
+    
+    query = mycol.find( {"text":name})
+    # query = mycol.find( { "$text": {"$search": name}})
+    try:
+        for file in query:
+            reply_text = file['reply']
+            btn = file['btn']
+            fileid = file['file']
+            try:
+                alert = file['alert']
+            except:
+                alert = None
+        return reply_text, btn, alert, fileid
+    except:
+        return None, None, None, None
+
+
+async def get_filters(group_id):
+    mycol = mydb[str(group_id)]
+
+    texts = []
+    query = mycol.find()
+    try:
+        for file in query:
+            text = file['text']
+            texts.append(text)
     except:
         pass
-    await bot.leave_chat(message.chat.id)
+    return texts
+
+
+async def delete_filter(message, text, group_id):
+    mycol = mydb[str(group_id)]
+    
+    myquery = {'text':text }
+    query = mycol.count_documents(myquery)
+    if query == 1:
+        mycol.delete_one(myquery)
+        await message.reply_text(
+            f"'`{text}`'  deleted. I'll not respond to that filter anymore.",
+            quote=True,
+            parse_mode="md"
+        )
+    else:
+        await message.reply_text("Couldn't find that filter!", quote=True)
+
+
+async def del_all(message, group_id, title):
+    if str(group_id) not in mydb.list_collection_names():
+        await message.edit_text(f"Nothing to remove in {title}!")
+        return
+
+    mycol = mydb[str(group_id)]
+    try:
+        mycol.drop()
+        await message.edit_text(f"All filters from {title} has been removed")
+    except:
+        await message.edit_text("Couldn't remove all filters from group!")
+        return
+
+
+async def count_filters(group_id):
+    mycol = mydb[str(group_id)]
+
+    count = mycol.count()
+    if count == 0:
+        return False
+    else:
+        return count
+
+
+async def filter_stats():
+    collections = mydb.list_collection_names()
+
+    if "CONNECTION" in collections:
+        collections.remove("CONNECTION")
+
+    totalcount = 0
+    for collection in collections:
+        mycol = mydb[collection]
+        count = mycol.count()
+        totalcount += count
+
+    totalcollections = len(collections)
+
+    return totalcollections, totalcount
