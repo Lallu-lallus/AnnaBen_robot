@@ -207,7 +207,18 @@ async def get_file_details(query):
     cursor = Media.find(filter)
     filedetails = await cursor.to_list(length=1)
     return filedetails
-
+def split_quotes(text: str) -> List:
+    if not any(text.startswith(char) for char in START_CHAR):
+        return text.split(None, 1)
+    counter = 1  # ignore first char -> is some kind of quote
+    while counter < len(text):
+        if text[counter] == "\\":
+            counter += 1
+        elif text[counter] == text[0] or (text[0] == SMART_OPEN and text[counter] == SMART_CLOSE):
+            break
+        counter += 1
+    else:
+        return text.split(None, 1)
 
 async def is_subscribed(bot, query):
     try:
