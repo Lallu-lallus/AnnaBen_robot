@@ -26,6 +26,7 @@ AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 DATABASE_URI = environ['DATABASE_URI']
 DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 
 # Messages
 default_start_msg = """
