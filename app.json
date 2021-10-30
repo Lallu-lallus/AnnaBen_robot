@@ -1,7 +1,6 @@
 {
-    "name": "ALPHA_IMDB_BOT",
+    "name": "EvaMariaBot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
-    "logo": "https://telegra.ph/file/65f9edd6a86fc42de655a.jpg",
     "keywords": [
       "telegram",
       "auto-filter",
@@ -15,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Lallu-lallus/ALPHA_IMDB_BOT",
-    "repository": "https://github.com/Lallu-lallus/ALPHA_IMDB_BOT",
+    "website": "https://github.com/EvamariaTG/EvaMaria",
+    "repository": "https://github.com/EvamariaTG/EvaMaria",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -38,6 +37,18 @@
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "value": ""
         },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "value": ""
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "value": ""
+        },
+        "SUPPORT_CHAT": {
+            "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
+            "value": ""
+        },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "value": "",
@@ -47,30 +58,14 @@
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "value": "",
             "required": false
-        },
-        "START_MSG": {
-            "description": "Welcome message for start command",
-            "value": "**👋Hey{msg.from_user.mention} 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 ANNA BEN , 𝙸 𝙲𝙰𝙽 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙻𝙻 𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙸𝚃 𝙴𝙰𝚂𝚈 ,
-𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙰𝚂 𝙰𝙳𝙼𝙸𝙽 😍",
-            "required": false
-        },
+        },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
             "value": "False",
             "required": false
         },
-        "OMDB_API_KEY": {
-            "description": "Your OMBD API KEY, Fill if you want to generate a imdb poster of movie in autofilter.",
-            "value": "",
-            "required": false
-        },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "value": "",
-            "required": false
-        },
-        "AUTH_GROUPS": {
-            "description": "ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.",
             "value": "",
             "required": false
         },
