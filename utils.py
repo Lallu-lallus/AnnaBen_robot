@@ -143,6 +143,22 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0):
     files = await cursor.to_list(length=max_results)
 
     return files, next_offset
+def get_file_id(msg: Message):
+    if msg.media:
+        for message_type in (
+            "photo",
+            "animation",
+            "audio",
+            "document",
+            "video",
+            "video_note",
+            "voice",
+            "sticker"
+        ):
+            obj = getattr(msg, message_type)
+            if obj:
+                setattr(obj, "message_type", message_type)
+                return obj
 
 async def broadcast_messages(user_id, message):
     try:
