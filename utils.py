@@ -104,7 +104,18 @@ async def save_file(media):
             logger.warning(media.file_name + " is already saved in database")
         else:
             logger.info(media.file_name + " is saved in database")
-
+def split_quotes(text: str) -> List:
+    if not any(text.startswith(char) for char in START_CHAR):
+        return text.split(None, 1)
+    counter = 1  # ignore first char -> is some kind of quote
+    while counter < len(text):
+        if text[counter] == "\\":
+            counter += 1
+        elif text[counter] == text[0] or (text[0] == SMART_OPEN and text[counter] == SMART_CLOSE):
+            break
+        counter += 1
+    else:
+        return text.split(None, 1)
 
 async def get_search_results(query, file_type=None, max_results=10, offset=0):
     """For given query return (results, next_offset)"""
