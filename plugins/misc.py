@@ -38,6 +38,13 @@ async def showid(client, message):
             _id += (
                 "<b>➲ User ID</b>: "
                 f"<code>{message.from_user.id}</code>\n"
+                "<b>➲First name</b>: {message.from_user.first_name}"
+                "<b>➲Last name</b>: {message.from_user.last_name}"
+                "<b>➲Username</b>: {message.from_user.username}"
+                "<b>➲Telegram id</b>: <code>{message.from_user.id}</code>"
+                "<b>➲Phone number</b>: {message.from_user.phone_number}"
+                "<b>➲Language</b>: {message.from_user.language_code}"
+                "<b>➲Status</b>: {message.from_user.status}"
             )
             file_info = get_file_id(message)
         if file_info:
