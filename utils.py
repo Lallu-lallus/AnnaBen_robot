@@ -39,6 +39,15 @@ class Media(Document):
 
     class Meta:
         collection_name = COLLECTION_NAME
+# temp db for banned 
+class temp(object):
+    BANNED_USERS = []
+    BANNED_CHATS = []
+    ME = None
+    CURRENT=int(os.environ.get("SKIP", 2))
+    CANCEL = False
+    MELCOW = {}
+    U_NAME = None
 
 @imdb.register
 class Poster(Document):
