@@ -4,6 +4,7 @@ import logging
 from struct import pack
 from pyrogram.errors import UserNotParticipant
 from pyrogram.file_id import FileId
+from pyrogram.types import Message
 from pymongo.errors import DuplicateKeyError
 from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
