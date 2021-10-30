@@ -9,6 +9,7 @@ from pyrogram.types import Message
 from pymongo.errors import DuplicateKeyError
 from umongo import Instance, Document, fields
 from typing import List
+from typing import Union
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
 import os
