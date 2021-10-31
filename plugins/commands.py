@@ -28,7 +28,7 @@ async def start(client, message):
             InlineKeyboardButton('😊 About', callback_data='about')
             ],[
             InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/pro_editor_tg'),
-            InlineKeyboardButton('🤠Share me', url='https://t.me/share/url?url=https://t.me/TGMovieRobot')
+            InlineKeyboardButton('🤠Share me', url='https://t.me/share/url?url=https://t.me/Dqautofl_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -73,7 +73,8 @@ async def start(client, message):
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
             ],[
-            InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/pro_editor_tg') 
+            InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/pro_editor_tg'), 
+            InlineKeyboardButton('🤠Share me', url='https://t.me/share/url?url=https://t.me/Dqautofl_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
