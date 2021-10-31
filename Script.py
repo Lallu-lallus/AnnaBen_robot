@@ -6,7 +6,7 @@ Hey,<a href='http://t.me/Dqautofl_Bot?startgroup=true'>add me to your group and 
 ©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: 𝙴𝚟𝚊 𝙼𝚊𝚛𝚒𝚊
+    ABOUT_TXT = """
 ✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: <a href="https://t.me/Dqautofl_Bot"> ANNA BEN </a>
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
