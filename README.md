@@ -6,17 +6,17 @@ Very Sempil Bot Auto Filter bot
 
 [![Deploy](https://telegra.ph/file/87fd3f1437dbd06644b20.jpg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/anna-ben-repo)
 
-## Added Features
-* Imdb posters for autofilter.
-*Double filter button.
-*Start message with pic
-* Custom captions for your files.
-* Index command to index all the files in a given channel (No USER_SESSION Required).
-* Ability to Index Public Channels without being admin.
-* Support Auto-Filter (Both in PM and in Groups)
-* Once files saved in Database , exists until you manually deletes. (No Worry if post gets deleted from source channel.)
-* Added Force subscribe (Only channel subscribes can use the bot)
-* Ability to restrict groups(AUTH_GROUPS)
+- [x] Auto Filter
+- [x] Manuel Filter
+- [x] IMDB
+- [x] Admin Commands
+- [x] Broadcast
+- [x] Index
+- [x] IMDB search
+- [x] Inline Search
+- [x] Random pics
+- [x] ids and User info 
+- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 
 ## Installation
 
