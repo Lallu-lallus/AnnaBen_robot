@@ -29,6 +29,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/pro_editor_tg'),
             InlineKeyboardButton('🤠Share me', url='https://t.me/share/url?url=https://t.me/Dqautofl_bot')
+            ],[
+            InlineKeyboardButton('ANNA UPDATES😉', url='https://t.me/team_annaben')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -75,6 +77,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/pro_editor_tg'), 
             InlineKeyboardButton('🤠Share me', url='https://t.me/share/url?url=https://t.me/Dqautofl_bot')
+            ],[
+            InlineKeyboardButton('ANNA UPDATES😉', url='https://t.me/team_annaben')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
