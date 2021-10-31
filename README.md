@@ -4,7 +4,7 @@ Very Sempil Bot Auto Filter bot
 </p>
 # Click Below Image to Deploy
 
-[![Deploy](https://telegra.ph/file/87fd3f1437dbd06644b20.jpg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/Alpha_music-bot)
+[![Deploy](https://telegra.ph/file/87fd3f1437dbd06644b20.jpg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/anna-ben-repo)
 
 ## Added Features
 * Imdb posters for autofilter.
