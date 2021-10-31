@@ -1,13 +1,14 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
 𝙼𝚈 𝙽𝙰𝙼𝙴 , <a href='https://t.me/Dqautofl_bot'>Anna Ben</a>, 𝙸𝚃'𝚂 𝚅𝙴𝚁𝚈 𝙴𝙰𝚂𝚈. 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽, 𝚃𝙷𝙰𝚃𝚂 𝙰𝙻𝙻, 𝙸'𝙻𝙻 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 𝚃𝙷𝙴𝚁𝙴 🤓
-Hey,<a href='http://t.me/EvaMariaBot?startgroup=true'>add me to your group and make me an admin here</a>
+Hey,<a href='http://t.me/Dqautofl_Bot?startgroup=true'>add me to your group and make me an admin here</a>
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: 𝙴𝚟𝚊 𝙼𝚊𝚛𝚒𝚊
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: @pro_editor_tg
+✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: <a href="https://t.me/Dqautofl_Bot"> ANNA BEN </a>
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href="https://t.me/pro_editor_tg"> Lallu-llalus </a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
