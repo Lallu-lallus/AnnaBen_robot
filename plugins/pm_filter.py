@@ -555,4 +555,8 @@ async def auto_filter(client, message):
             await message.reply_text(f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
         else:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
-        
+        else:
+            m = await message.reply_sticker(sticker='CAACAgUAAxkBAAJNQWF2NY71AAETl40zFYS6Je5bYkajbgAC0gMAAsBmsFe68ft4kcyTVR4E', reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖮𝗇 𝖦𝗈𝗈𝗀𝗅𝖾.', url=f'https://google.com/search?q={search.replace(" ","+")}')]]))
+                
+            await sleep(7)
+            await m.delete()
