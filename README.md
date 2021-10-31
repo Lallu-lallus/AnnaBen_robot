@@ -2,8 +2,9 @@
 Very Sempil Bot Auto Filter bot
 ##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Alpha-Auto-Filter-Bot!;created+by+Alpha+Admin+Lallu+Lallus!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
 </p>
-<img src="https://telegra.ph/file/080538bf9bad4e0d208ca.jpg" alt="JPG" width="300" height="250"/>
-</p>
+# Click Below Image to Deploy
+[![Deploy](https://telegra.ph/file/87fd3f1437dbd06644b20.jpg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/Alpha_music-bot)
+
 ## Added Features
 * Imdb posters for autofilter.
 *Double filter button.
