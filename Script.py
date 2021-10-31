@@ -40,7 +40,7 @@ Hey,<a href='http://t.me/Dqautofl_Bot?startgroup=true'>add me to your group and 
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
+2. ANNA BEN supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
