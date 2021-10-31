@@ -91,3 +91,5 @@ Contact Me On [Telegram](https://t.me/Pro_editor_tg)
 
 ## License
 Code released under [The GNU General Public License](LICENSE).
+## credit 💳
+@PANDITHAN_SIR
