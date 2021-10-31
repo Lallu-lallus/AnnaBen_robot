@@ -326,7 +326,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.answer('മൂവി ഞാൻ നിങ്ങളുടെ  പിഎമ്മിൽ   സെന്റ്  ചെയ്തട്ടുണ്ട്🤠,I have send movie files in pm 🤠',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
