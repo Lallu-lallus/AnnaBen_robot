@@ -87,7 +87,7 @@ logger - Get log file
 ## Support
 Contact Me On [Telegram](https://t.me/Pro_editor_tg)
 
-[Update Channel](https://t.me/tg_bots_updates)
+[Update Channel](https://t.me/Team_annaben)
 
 ## License
 Code released under [The GNU General Public License](LICENSE).
