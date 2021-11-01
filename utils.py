@@ -89,8 +89,8 @@ async def get_poster(query, bulk=False, id=False):
         date = "N/A"
     poster = movie.get('full-size cover url')
     plot = movie.get('plot outline')
-    if plot and len(plot) > 800:
-        plot = plot[0:800] + "..."
+    if plot and len(plot) > 2000:
+        plot = plot[0:2000] + "..."
     return {
         'title': title,
         'year': date,
