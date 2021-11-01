@@ -553,7 +553,7 @@ async def auto_filter(client, message):
             )
         imdb=await get_poster(search)
         if imdb and imdb.get('poster'):
-            await message.reply_photo(photo=imdb.get('poster'), caption=f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**🎧 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾:English, Malayalam\n\n**©️ Group by:- {message.chat.title}\n\n**💲 Production:N/A\n\n**💰 Box-Office : N/A\n\n**Ⓟ︎Ⓡ︎Ⓞ︎ Ⓣ︎Ⓘ︎Ⓟ︎Ⓢ︎:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo=imdb.get('poster'), caption=f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
         elif imdb:
             await message.reply_text(f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**🎧 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾:English, Malayalam\n\n**©️ Group by:- {message.chat.title}\n\n**💲 Production:N/A\n\n**💰 Box-Office : N/A\n\n**Ⓟ︎Ⓡ︎Ⓞ︎ Ⓣ︎Ⓘ︎Ⓟ︎Ⓢ︎:𝗜𝗳 𝘆𝗼𝘂 𝗱𝗼 𝗻𝗼𝘁 𝘀𝗲𝗲 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗳𝗶𝗹𝗲, 𝗹𝗼𝗼𝗸 𝗮𝘁 𝗻𝗲𝘅𝘁 𝗽𝗮𝗴𝗲😁", reply_markup=InlineKeyboardMarkup(btn))
         else:
