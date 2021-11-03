@@ -2,7 +2,7 @@
 Very Sempil Bot Auto Filter bot
 ##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+𝑨𝑵𝑵𝑵𝑨-𝑩𝑬𝑵-𝑭𝑰𝑳𝑻𝑬𝑹-𝑩𝑶𝑻!;created+by+𝑻𝑬𝑨𝑴+𝑨𝑵𝑵𝑨+𝑩𝑬𝑵!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
 </p>
-# CLICK BELOW IMAGE TO DEPLOY👇👇👇
+# 𝐂𝐋𝐈𝐂𝐊 𝐁𝐄𝐋𝐎𝐖 𝐈𝐌𝐀𝐆𝐄 𝐓𝐎 𝐃𝐄𝐏𝐋𝐎𝐘👇👇👇
 
 
 [![Deploy](https://telegra.ph/file/87fd3f1437dbd06644b20.jpg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/anna-ben-repo)
