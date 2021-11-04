@@ -535,7 +535,7 @@ async def auto_filter(client, message):
             for file in files:
                 file_id = file.file_id
                 btn.append(
-                    [InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{file_id}'), InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files_#{file_id}')]
+                    [InlineKeyboardButton(text=f"🎞 [{get_size(file.file_size)}] 📺 {file.file_name}", callback_data=f'files#{file_id}')]
                     )
         if not btn:
             return
@@ -545,7 +545,7 @@ async def auto_filter(client, message):
             BUTTONS[key] = search
             req = message.from_user.id if message.from_user else 0
             btn.append(
-                [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
+                [InlineKeyboardButton(text=f"📠 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 =>",callback_data=f"next_{req}_{key}_{offset}")]
             )
         else:
             btn.append(
