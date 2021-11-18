@@ -457,7 +457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.FILTER_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
-
+        )
     elif query.data == "filter":
         buttons= [[
             InlineKeyboardButton('ᴍᴀɴᴜᴇʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
