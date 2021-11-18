@@ -21,8 +21,6 @@ Very Sempil Bot Auto Filter bot
 
 ## Installation
 
-###Alpha botz😌
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA_IMDB_BOT)
 
 
 
