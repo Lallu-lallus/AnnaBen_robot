@@ -94,7 +94,7 @@ async def start(client, message):
             InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/Pro_editor_tg'),
             InlineKeyboardButton('Share me🤠', url='https://t.me/share/url?url=https://t.me/dqautofl_bot')
             ],[
-            InlineKeyboardButton('ANNA UPDATES😉', url='https://t.me/team_annaben')
+            InlineKeyboardButton('ANNA UPDATES😉', url='https://t.me/M_STER_TECH')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
