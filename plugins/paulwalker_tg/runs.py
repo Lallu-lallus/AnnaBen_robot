@@ -5,7 +5,7 @@ from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 
 RUN_STRINGS = (
-    "A bear walks into a bar and says, Give me a whiskey and … cola.",
+    "ഡാ നിന്റെ ഒക്കെ അമ്മയ്ക്കും പെങ്ങക്കും ഉള്ളതൊക്കെ തന്നാട എല്ലാർക്കും ഒള്ളത്.",
     "A woman in labor suddenly shouted, “Shouldn’t! Wouldn’t! Couldn’t! Didn’t! Can’t!”..",
     "Hear about the new restaurant called Karma?",
     "Did you hear about the actor who fell through the floorboards?",
