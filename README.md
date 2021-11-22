@@ -13,7 +13,7 @@ Very Sempil Bot Auto Filter bot
 - [x] Admin Commands
 - [x] Broadcast
 - [x] Index
-- [x] IMDB സെർച്ച്‌
+- [x] IMDB search
 - [x] Fun mode
 - [x] Inline Search
 - [x] Random pics
