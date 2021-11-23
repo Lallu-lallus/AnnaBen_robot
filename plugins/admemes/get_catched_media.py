@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrobot.helper_functions.cust_p_filters import sudo_filter
+from plugins.helper_functions.cust_p_filters import sudo_filter
 
 
 @Client.on_message(
