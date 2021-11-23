@@ -2,11 +2,9 @@
 
 
 from pyrogram import Client, filters
-from pyrogram.types import Message
-from pyrobot import COMMAND_HAND_LER
-from plugins.helper_functions.cust_p_filters import (
-    admin_fliter
-)
+from info import COMMAND_HAND_LER
+from plugins.helper_functions.cust_p_filters import f_onw_fliter
+
 
 @Client.on_message(
     filters.command(["pin"], COMMAND_HAND_LER) &
