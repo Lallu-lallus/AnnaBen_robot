@@ -2,6 +2,7 @@
 
 
 from pyrogram import Client, filters
+from pyrogram.types import Message
 from info import COMMAND_HAND_LER
 from plugins.helper_functions.cust_p_filters import (
     admin_fliter
