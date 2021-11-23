@@ -24,6 +24,17 @@ class script(object):
 
 𝗠𝗔𝗦𝗧𝗘𝗥:
 <a href="https://t.me/team_annaben"> 𝑻𝑬𝑨𝑴 𝑨𝑵𝑵𝑨 </a>"""
+    PIN_TXT =""" Pin :- 
+
+All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!
+
+📚 Commands & Usage:
+
+◉ /Pin :- Pin The Message You Replied To Message To Send A Notification To Group Members
+
+◉ /Unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message
+
+Made By @SakuraBotUpdates ❤️
     FUN_TXT ="""<b>FUN MODULE</b> 
     
 <b>🎲 NOTHING MUCH JUST SOME FUN THINGS</b>
