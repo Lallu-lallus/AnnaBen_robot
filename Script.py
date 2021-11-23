@@ -36,7 +36,7 @@ All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The
 
 ◉ /Unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message
 
-Made By @SakuraBotUpdates ❤️
+
     FUN_TXT ="""<b>FUN MODULE</b> 
     
 <b>🎲 NOTHING MUCH JUST SOME FUN THINGS</b>
