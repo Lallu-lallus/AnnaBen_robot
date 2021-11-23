@@ -24,7 +24,9 @@ class script(object):
 
 𝗠𝗔𝗦𝗧𝗘𝗥:
 <a href="https://t.me/team_annaben"> 𝑻𝑬𝑨𝑴 𝑨𝑵𝑵𝑨 </a>"""
-    PIN_TXT =""" Pin :- 
+    PIN_TXT ="""<b>PIN MODULE</b>
+
+ Pin :- 
 
 All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!
 
