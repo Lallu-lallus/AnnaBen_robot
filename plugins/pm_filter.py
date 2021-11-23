@@ -437,6 +437,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ɪɴғᴏ', callback_data='info'),
             InlineKeyboardButton('ʙʀᴏᴀᴅᴄᴀsᴛ', callback_data='broadcast')
             ],[
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
+            ],[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'), 
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('close', callback_data='close_data')
