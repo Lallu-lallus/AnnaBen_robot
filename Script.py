@@ -34,7 +34,7 @@ class script(object):
 
 ◉ /Pin :- Pin The Message You Replied To Message To Send A Notification To Group Members
 
-◉ /Unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message
+◉ /Unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message"""
     FUN_TXT ="""<b>FUN MODULE</b> 
     
 <b>🎲 NOTHING MUCH JUST SOME FUN THINGS</b>
