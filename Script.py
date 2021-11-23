@@ -28,7 +28,7 @@ class script(object):
 
 <b>Pin :</b>
 
-All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!
+<b>All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!</b>
 
 <b>📚 Commands & Usage:</b>
 
