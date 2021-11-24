@@ -4,8 +4,7 @@ Syntax: .purge"""
 import asyncio
 from pyrogram import Client, filters
 from info import (
-    COMMAND_HAND_LER,
-    TG_MAX_SELECT_LEN
+    COMMAND_HAND_LER
 )
 from pyrobot.helper_functions.admin_check import admin_check
 from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
