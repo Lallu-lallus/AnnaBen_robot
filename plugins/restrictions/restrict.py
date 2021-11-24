@@ -3,7 +3,8 @@ from pyrogram import (
     filters
 )
 from pyrogram.types import (
-    ChatPermissions
+    ChatPermissions,
+    Message
 )
 from info import COMMAND_HAND_LER
 from plugins.helper_functions.admin_check import admin_check
