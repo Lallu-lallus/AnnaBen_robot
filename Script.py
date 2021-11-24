@@ -24,6 +24,17 @@ class script(object):
 
 𝗠𝗔𝗦𝗧𝗘𝗥:
 <a href="https://t.me/team_annaben"> 𝑻𝑬𝑨𝑴 𝑨𝑵𝑵𝑨 </a>"""
+    JSON_TXT ="""<b>JSON MODULE</b>
+JSON:
+Bot returns json for all replied messages with /json
+
+Features:
+Message Editting JSON
+Pm Support
+Group Support
+
+Note:
+Everyone can use this command , if spaming happens bot will automatically ban you from the group"""
     PIN_TXT ="""<b>PIN MODULE</b>
 
 <b>Pin :</b>
