@@ -24,6 +24,10 @@ class script(object):
 
 𝗠𝗔𝗦𝗧𝗘𝗥:
 <a href="https://t.me/team_annaben"> 𝑻𝑬𝑨𝑴 𝑨𝑵𝑵𝑨 </a>"""
+    WHOIS_TXT ="""<b>WHOIS MODULE</b>
+Note:- Give a user details
+
+•/whois :-give a user full details"""
     JSON_TXT ="""<b>JSON MODULE</b>
 JSON:
 Bot returns json for all replied messages with /json
