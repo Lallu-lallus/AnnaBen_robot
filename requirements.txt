@@ -9,3 +9,4 @@ imdbpy
 
 # for interacting with te.legra.ph
 telegraph==1.4.1
+youtube-dl
