@@ -28,6 +28,17 @@ class script(object):
 Note:- Give a user details
 
 •/whois :-give a user full details"""
+    SONG_TXT ="""<b>SONG MODULE</b>
+Song Download
+Song Download Module, For Those Who Love Music
+
+🎈 Command
+
+- /song [Song Name] - To Download Music
+
+Usage
+- Can Be Used By Everyone
+- Works in bot pm"""
     JSON_TXT ="""<b>JSON MODULE</b>
 JSON:
 Bot returns json for all replied messages with /json
