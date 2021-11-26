@@ -37,8 +37,7 @@ Song Download Module, For Those Who Love Music
 - /song [Song Name] - To Download Music
 
 Usage
-- Can Be Used By Everyone
-- Works in bot pm"""
+- working pm and groups"""
     JSON_TXT ="""<b>JSON MODULE</b>
 JSON:
 Bot returns json for all replied messages with /json
