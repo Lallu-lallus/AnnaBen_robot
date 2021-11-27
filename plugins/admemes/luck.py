@@ -14,7 +14,7 @@ TRY_YOUR_LUCK = "🎰"
     f_onw_fliter
 )
 async def luck_cound(client, message):
-    """ /luck an @animateluck """
+    """ /luck an @animatedluck """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
         rep_mesg_id = message.reply_to_message.message_id
