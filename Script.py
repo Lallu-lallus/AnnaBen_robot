@@ -67,9 +67,7 @@ t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍:
 𝟣. /dice - Roll The Dice 
 𝟤. /Throw 𝗈𝗋 /Dart - 𝖳𝗈 𝖬𝖺𝗄𝖾 Drat 
 3. /Runs - Jokes 
-4. /Goal or /Shoot - To Make A Goal Or Shoot
-5. /luck - try your luck
-6. / ball - try your luck"""
+4. /Goal or /Shoot - To Make A Goal Or Shoot"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
