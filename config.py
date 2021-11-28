@@ -60,6 +60,12 @@ class Config(object):
    
     CHAT = os.environ.get("CHAT", "")
 
+    LOG_GROUP = os.environ.get("LOG_GROUP", "")
+    if LOG_GROUP:
+        LOG_GROUP = int(LOG_GROUP)
+    else:
+        LOG_GROUP = None
+
 
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
 
