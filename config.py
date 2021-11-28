@@ -1,5 +1,7 @@
 import os
 
+Import re
+
 import time
 
 class Config(object):
