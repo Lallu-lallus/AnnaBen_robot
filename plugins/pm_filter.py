@@ -456,20 +456,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('😎admin😎', callback_data='admin'),
-            InlineKeyboardButton('😈connect😈', callback_data='coct'),
+            InlineKeyboardButton('🗳️connect🗳️', callback_data='coct'),
             InlineKeyboardButton('👻filters👻', callback_data='auto_manual')
             ],[
-            InlineKeyboardButton('☠️gtrans☠️', callback_data='gtrans'),
-            InlineKeyboardButton('😤info😤', callback_data='info'),
-            InlineKeyboardButton('🥱paste🥱', callback_data='paste')
+            InlineKeyboardButton('📖gtrans📖', callback_data='gtrans'),
+            InlineKeyboardButton('📄info📄', callback_data='info'),
+            InlineKeyboardButton('💻paste💻', callback_data='paste')
             ],[
             InlineKeyboardButton('👺purge👺', callback_data='purge'),
-            InlineKeyboardButton('👹restric👹', callback_data='restric'),
-            InlineKeyboardButton('🙊search🙊', callback_data='search')
+            InlineKeyboardButton('🔇restric🔇', callback_data='restric'),
+            InlineKeyboardButton('🔍search🔎', callback_data='search')
             ],[
             InlineKeyboardButton('💫tgraph💫', callback_data='tgraph'),
             InlineKeyboardButton('🧟‍♂️zombies🧟‍♂️', callback_data='zombies'),
             InlineKeyboardButton('🤡Fun🤡', callback_data='fun')
+            ],[
+            InlineKeyboardButton('🎶song🎶', callback_data='song'),
+            InlineKeyboardButton('🖨️json🖨️', callback_data='json'),
+            InlineKeyboardButton('📎pin📎', callback_data='pin')
             ],[
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
