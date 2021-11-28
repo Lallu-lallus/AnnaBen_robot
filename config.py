@@ -61,3 +61,8 @@ class Config(object):
     # To record start time of bot
 
     BOT_START_TIME = time.time()
+
+
+
+
+    STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
