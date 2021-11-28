@@ -69,4 +69,4 @@ class Config(object):
 
 
 
-   SESSION = os.environ.get("SESSION_STRING", "")
+   SESSION = os.environ.get("SESSION_STRING")
