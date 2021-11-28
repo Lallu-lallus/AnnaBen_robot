@@ -66,9 +66,11 @@ class Config(object):
     else:
         LOG_GROUP = None
 
+    ADMIN = os.environ.get("ADMINS", "1815494853")
+
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
 
-    ADMIN = os.environ.get("ADMINS", "1815494853")
+    
 
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
 
