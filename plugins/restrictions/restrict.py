@@ -3,16 +3,14 @@ from pyrogram import (
     filters
 )
 from pyrogram.types import (
-    ChatPermissions,
-    Message
+    ChatPermissions
 )
-from info import COMMAND_HAND_LER
 from plugins.helper_functions.admin_check import admin_check
 from plugins.helper_functions.extract_user import extract_user
 from plugins.helper_functions.string_handling import extract_time
 
 
-@Client.on_message(filters.command("mute", COMMAND_HAND_LER))
+@Client.on_message(filters.command("mute"))
 async def mute_user(_, message):
     is_admin = await admin_check(message)
     if not is_admin:
@@ -35,19 +33,19 @@ async def mute_user(_, message):
             await message.reply_text(
                 "👍🏻 "
                 f"{user_first_name}"
-                " ലവന്റെ വായടച്ചിട്ടുണ്ട്! 🤐"
+                " Lavender's mouth is shut! 🤐"
             )
         else:
             await message.reply_text(
                 "👍🏻 "
                 f"<a href='tg://user?id={user_id}'>"
-                "ലവന്റെ"
+                "Of lavender"
                 "</a>"
-                " വായടച്ചിട്ടുണ്ട്! 🤐"
+                " The mouth is closed! 🤐"
             )
 
 
-@Client.on_message(filters.command("tmute", COMMAND_HAND_LER))
+@Client.on_message(filters.command("tmute"))
 async def temp_mute_user(_, message):
     is_admin = await admin_check(message)
     if not is_admin:
@@ -62,8 +60,8 @@ async def temp_mute_user(_, message):
     if until_date_val is None:
         await message.reply_text(
             (
-                "അസാധുവായ സമയ തരം വ്യക്തമാക്കി. "
-                "പ്രതീക്ഷിച്ചതു m, h, or d, കിട്ടിയത്: {}"
+                "Invalid time type specified. "
+                "Expected m, h, or d, Got it: {}"
             ).format(
                 message.command[1][-1]
             )
@@ -84,16 +82,16 @@ async def temp_mute_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "കുറച്ചുനേരം മിണ്ടാതിരിക്ക്! 😠"
+                "Be quiet for a while! 😠"
                 f"{user_first_name}"
                 f" muted for {message.command[1]}!"
             )
         else:
             await message.reply_text(
-                "കുറച്ചുനേരം മിണ്ടാതിരിക്ക്! 😠"
+                "Be quiet for a while! 😠"
                 f"<a href='tg://user?id={user_id}'>"
-                "ലവന്റെ"
+                "Of lavender"
                 "</a>"
-                " വായ "
+                " Mouth "
                 f" muted for {message.command[1]}!"
             )
