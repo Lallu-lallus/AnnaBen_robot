@@ -12,5 +12,5 @@ telegraph==1.4.1
 youtube-dl
 youtube_search
 googletrans==3.1.0a0
-aiohttp
+aiohttp==3.7.4
 requests
