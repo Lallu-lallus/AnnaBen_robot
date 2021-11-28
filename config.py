@@ -66,3 +66,7 @@ class Config(object):
 
 
     STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
+
+
+
+   SESSION = os.environ.get("SESSION_STRING", "")
