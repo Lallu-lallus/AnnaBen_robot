@@ -470,7 +470,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('tgraph', callback_data='tgraph'),
             InlineKeyboardButton('zombies', callback_data='zombies')
             ],[
-            InlineKeyboardButton('« Back', callback_data='start'),
+            InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
