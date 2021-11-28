@@ -81,7 +81,7 @@ class Config(object):
 
 
 
-   ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
+   ADMINS = (admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()
 
    
   
