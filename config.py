@@ -57,6 +57,8 @@ class Config(object):
     CONNECT_COMMAND = os.environ.get("CONNECT_COMMANDD", "connect")
     
     SESSION = os.environ.get("SESSION_STRING", "")
+   
+    CHAT = int(os.environ.get("CHAT", ""))
 
 
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
@@ -74,3 +76,4 @@ class Config(object):
 
    
 
+  
