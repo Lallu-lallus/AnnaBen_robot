@@ -15,3 +15,4 @@ googletrans==3.1.0a0
 aiohttp==3.7.4
 requests
 ffmpeg-python
+pytgcalls==0.0.17
