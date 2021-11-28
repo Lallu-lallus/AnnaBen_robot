@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from pyrogram import Client, filters, emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
-from plugins.helper_functoin.vc import mp
+from plugins.helper_functoins.vc import mp
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 ADMINS=Config.ADMINS
