@@ -11,3 +11,4 @@ bs4
 telegraph==1.4.1
 youtube-dl
 youtube_search
+googletrans==3.1.0a0
