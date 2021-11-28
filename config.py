@@ -55,6 +55,9 @@ class Config(object):
     DELETE_ALL_CMD = os.environ.get("DELETE_ALL_CMDD", "delall")
 
     CONNECT_COMMAND = os.environ.get("CONNECT_COMMANDD", "connect")
+    
+    SESSION = os.environ.get("SESSION_STRING", "")
+
 
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
 
@@ -69,4 +72,5 @@ class Config(object):
 
 
 
-   SESSION = os.environ.get("SESSION_STRING")
+   
+
