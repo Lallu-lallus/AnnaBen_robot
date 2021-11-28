@@ -9,7 +9,7 @@ from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
 from pytgcalls import GroupCall
 import signal
-from Script import script
+from user import USER
 
 STREAM_URL=Config.STREAM_URL
 CHAT=Config.CHAT
