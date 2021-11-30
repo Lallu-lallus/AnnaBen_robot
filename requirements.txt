@@ -19,3 +19,4 @@ pytgcalls==0.0.17
 wheel
 psutil
 tgintegration
+gTTS
