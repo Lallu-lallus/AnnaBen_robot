@@ -516,6 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.ALIVE_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
+        )
     elif query.data == "whois":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
