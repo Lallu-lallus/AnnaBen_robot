@@ -11,7 +11,7 @@ BREAK_YOUR_LOVE = "💔"
 @Client.on_message(
     filters.command(["break", "thepp"])
 )
-async def luck_cownd(client, message):
+async def break_thepp(client, message):
     """ /break an @animatedbreak """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
