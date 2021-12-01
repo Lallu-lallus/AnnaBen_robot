@@ -10,7 +10,7 @@ class script(object):
 ╔════❰ ꪖ᥇ꪮꪊ𝓽 ꪑ𝘴ᧁ ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣ 
 ║┣⪼ 𝙈𝙔 𝙉𝘼𝙈𝙀 - <a href="https://t.me/Dqautofl_Bot"> 𝑨𝑵𝑵𝑨 𝑩𝑬𝑵 </a>
-║┣⪼ Ⓓ︎Ⓔ︎Ⓥ︎1 - <a href="https://t.me/pro_editor_tg"> 🅛︎🅐︎🅛︎🅛︎🅤︎ᵗᵍ </a>
+║┣⪼ Ⓓ︎Ⓔ︎Ⓥ︎1 - <a href="https://t.me/pro_editor_tg"> Lalluᵗᵍ </a>
 ║┣⪼ Ⓓ︎Ⓔ︎Ⓥ︎2 - <a href="https://t.me/PANDITHAN_SIR"> ⸙ꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋM-STER </a>
 ║┣⪼ 𝓛𝓲𝓫𝓻𝓪𝓻𝓻𝔂 - 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ║┣⪼ 𝓛𝓪𝓷𝓰𝓾𝓪𝓰𝓮 - 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
@@ -28,6 +28,9 @@ class script(object):
 Note:- Give a user details
 
 •/whois :-give a user full details"""
+    ALIVE_TXT ="""<b>ALIVE MODULE</b>
+• /alive - check me alive or dead🤧
+Just for a rasam😂
     SONG_TXT ="""<b>SONG MODULE</b>
 Song Download
 Song Download Module, For Those Who Love Music
