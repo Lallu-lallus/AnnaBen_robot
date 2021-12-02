@@ -59,6 +59,10 @@
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "value": "",
             "required": false
+        },
+        "SINGLE_BUTTON": {
+            "description": "choose b/w single or double buttons (single button- True, Double button- false",
+            "required": false
         },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
