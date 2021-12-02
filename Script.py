@@ -31,6 +31,10 @@ Note:- Give a user details
     ALIVE_TXT ="""<b>ALIVE MODULE</b>
 • /alive - check me alive or dead🤧
 Just for a rasam😂"""
+    CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
+➡️ /covid <code>(countryname)</code> <b>you can find a corona information of every country</b>
+
+➡️ <b>example</b> : - /covid India"""
     SONG_TXT ="""<b>SONG MODULE</b>
 Song Download
 Song Download Module, For Those Who Love Music
