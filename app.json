@@ -61,7 +61,7 @@
             "required": false
         },
         "SINGLE_BUTTON": {
-            "description": "choose b/w single or double buttons (single button- True, Double button- false",
+            "description": "choose b/w single or double buttons (single button- True, Double button- false)",
             "required": false
         },   
         "USE_CAPTION_FILTER": {
