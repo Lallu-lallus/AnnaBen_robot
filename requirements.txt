@@ -20,3 +20,4 @@ wheel
 psutil
 tgintegration
 gTTS
+pyshorteners
