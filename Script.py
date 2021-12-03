@@ -42,7 +42,8 @@ Song Download Module, For Those Who Love Music
 
 🎈 Command
 
-- /song [Song Name] - To Download Music
+• /song or /mp3 (songname) - download song from yt servers.
+• /video or /mp4 (songname) - download video from yt servers
 
 Usage
 - working pm and groups"""
