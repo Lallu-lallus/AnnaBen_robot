@@ -24,4 +24,4 @@ pyshorteners
 aiofiles
 wget
 youtube-search-python==1.4.6
-Youtube-dlp
+
