@@ -1,4 +1,4 @@
-# (c) @MrPurple902 
+
  
 import re 
  
