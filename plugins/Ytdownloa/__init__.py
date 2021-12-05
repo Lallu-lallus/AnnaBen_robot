@@ -1,3 +1,3 @@
-from DaisyXMusic.services.downloaders import youtube
+from plugins.Ytdownloa import youtube
 
 __all__ = ["youtube"]
