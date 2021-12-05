@@ -86,7 +86,7 @@ class Config(object):
     STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
 
 
-    DURATION_LIMIT = int(get("DURATION_LIMIT", "7"))
+    DURATION_LIMIT = os.enviorn.get("DURATION_LIMIT", "7")
    
 
    
