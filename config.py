@@ -72,7 +72,7 @@ class Config(object):
 
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     
-    DURATION_LIMIT = os.enviorn.get("DURATION_LIMIT", "7")
+    DURATION_LIMIT = os.enviorn.get("DURATION_LIMIT", "")
     
 
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
