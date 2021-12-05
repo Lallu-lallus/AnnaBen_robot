@@ -71,7 +71,8 @@ class Config(object):
     ADMIN = os.environ.get("ADMINS", "1815494853")
 
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-
+    
+    DURATION_LIMIT = os.enviorn.get("DURATION_LIMIT", "7")
     
 
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
@@ -86,7 +87,7 @@ class Config(object):
     STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
 
 
-    DURATION_LIMIT = os.enviorn.get("DURATION_LIMIT", "7")
+    
    
 
    
