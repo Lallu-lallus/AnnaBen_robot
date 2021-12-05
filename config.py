@@ -87,7 +87,7 @@ class Config(object):
 
 
 
-
+    DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
    
 
    
