@@ -85,7 +85,7 @@ class Config(object):
 
     STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
 
-
+    from os import getenv
 
     DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
    
