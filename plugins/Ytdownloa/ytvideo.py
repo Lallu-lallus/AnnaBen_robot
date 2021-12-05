@@ -4,7 +4,7 @@ from os import path
 from yt_dlp import YoutubeDL
 
 from config import DURATION_LIMIT
-from DaisyXMusic.helpers.errors import DurationLimitError
+from plugins.helper_functions.errors import DurationLimitError
 
 ydl_opts = {
     "format": "bestaudio/best",
