@@ -1,3 +1,3 @@
-from plugins.Ytdownloa import youtube
+from plugins.Ytdownloa import ytvideo
 
 __all__ = ["youtube"]
