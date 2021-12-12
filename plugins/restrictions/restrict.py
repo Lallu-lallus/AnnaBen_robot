@@ -5,12 +5,13 @@ from pyrogram import (
 from pyrogram.types import (
     ChatPermissions
 )
+from info import COMMAND_HAND_LER
 from plugins.helper_functions.admin_check import admin_check
 from plugins.helper_functions.extract_user import extract_user
 from plugins.helper_functions.string_handling import extract_time
 
 
-@Client.on_message(filters.command("mute"))
+@Client.on_message(filters.command("mute", COMMAND_HAND_LER))
 async def mute_user(_, message):
     is_admin = await admin_check(message)
     if not is_admin:
@@ -33,19 +34,19 @@ async def mute_user(_, message):
             await message.reply_text(
                 "👍🏻 "
                 f"{user_first_name}"
-                " Lavender's mouth is shut! 🤐"
+                "Shut Your Mouth! 🤬"
             )
         else:
             await message.reply_text(
                 "👍🏻 "
                 f"<a href='tg://user?id={user_id}'>"
-                "Of lavender"
+                "Shut"
                 "</a>"
-                " The mouth is closed! 🤐"
+                " Your Mouth! 🤐"
             )
 
 
-@Client.on_message(filters.command("tmute"))
+@Client.on_message(filters.command("tmute", COMMAND_HAND_LER))
 async def temp_mute_user(_, message):
     is_admin = await admin_check(message)
     if not is_admin:
@@ -61,7 +62,7 @@ async def temp_mute_user(_, message):
         await message.reply_text(
             (
                 "Invalid time type specified. "
-                "Expected m, h, or d, Got it: {}"
+                "Expected m, h, or d, Got: {}"
             ).format(
                 message.command[1][-1]
             )
@@ -90,8 +91,8 @@ async def temp_mute_user(_, message):
             await message.reply_text(
                 "Be quiet for a while! 😠"
                 f"<a href='tg://user?id={user_id}'>"
-                "Of lavender"
+                "His "
                 "</a>"
-                " Mouth "
+                "Mouth"
                 f" muted for {message.command[1]}!"
             )
