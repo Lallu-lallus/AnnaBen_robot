@@ -837,7 +837,7 @@ async def auto_filter(client, msg, spoll=False):
             poster = imdb['poster'],
             plot = imdb['plot'],
             rating = imdb['rating'], 
-            url = imdb['url'], **locals()
+            url = imdb['url'],
             **locals()
         )
     else:
