@@ -88,7 +88,7 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 * Check [info.py](https://github.com/EvamariaTG/evamaria/blob/master/info.py) for more
 
 ## Note
-* Currently [API used](http://www.omdbapi.com) here is allowing 1000 requests per day. [You may not get posters if its crossed](https://t.me/ThankTelegram/910168). 
+* Currently the [API used](http://www.omdbapi.com) in this repo is allowing 1000 requests per day. [You may not get posters if its crossed](https://t.me/ThankTelegram/910168). 
 Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate requests.
 
 ## Admin commands
