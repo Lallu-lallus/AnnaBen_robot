@@ -15,7 +15,7 @@ Very Sempil Bot Auto Filter bot
 - [x] Index
 - [x] IMDB search
 - [x] Fun mode
-- [x] Inline Search
+- [x] Inline Search zinan
 - [x] Random pics
 - [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
