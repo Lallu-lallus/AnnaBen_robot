@@ -99,6 +99,7 @@ async def next_page(bot, query):
             InlineKeyboardButton(f'💫 Tips', 'tips')
         ]
     )
+
     else:
         btn = [
             [
