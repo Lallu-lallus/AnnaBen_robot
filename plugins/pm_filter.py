@@ -364,6 +364,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(alert,show_alert=True)
 
     if query.data.startswith("file"):
+        FILE_CHANNEL_ID = int(-1001616427269)
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
@@ -389,12 +390,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
                 return
             else:
-                await client.send_cached_media(
-                    chat_id=query.from_user.id,
+                send_file = await client.send_cached_media(
+                    chat_id=FILE_CHANNEL_ID,
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.message.reply_text(f"{send_file.link}")
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
