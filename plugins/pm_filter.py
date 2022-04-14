@@ -400,7 +400,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
                 reply_markup = InlineKeyboardMarkup(btn)
                 bb = await query.message.reply_text(
-                    text = f"Hi\n\n{send_file.link}",
+                    text = f"Hi click the below link and download the movies🍿\n\nERROR? Click the join channel button and try again \n\n{send_file.link}",
                     reply_markup = reply_markup
                 )
                 await asyncio.sleep(600)
