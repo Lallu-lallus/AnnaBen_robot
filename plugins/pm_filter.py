@@ -395,7 +395,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                bb = await query.message.reply_text(f"{send_file.link}")
+                btn = [[
+                    InlineKeyboardButton()
+                ]]
+                reply_markup = InlineKeyboardMarkup(btn)
+                bb = await query.message.reply_text(
+                    text = f"{send_file.link}",
+                    reply_markup = reply_markup
+                )
                 await asyncio.sleep(600)
                 await send_file.delete()
                 await bb.delete()
