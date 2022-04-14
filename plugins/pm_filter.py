@@ -25,7 +25,7 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-
+FILTER_MODE = {}
 
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
