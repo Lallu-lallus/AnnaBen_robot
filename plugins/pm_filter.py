@@ -396,7 +396,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption
                     )
                 btn = [[
-                    InlineKeyboardButton("💥JOIN CHANNEL💥")
+                    InlineKeyboardButton("💥JOIN CHANNEL💥", url='https://t.me/+OwPc0ngwyCY4M2I1')
                 ]]
                 reply_markup = InlineKeyboardMarkup(btn)
                 bb = await query.message.reply_text(
