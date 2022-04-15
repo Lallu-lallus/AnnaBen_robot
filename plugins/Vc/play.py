@@ -375,7 +375,7 @@ async def vplay(client, m: Message):
                             await huehue.edit(f"`{ep}`")
 
 
-@Client.on_message(filters.command(['vstream'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(['vstream'], prefixes=f"{COMMAND_HAND_LER}"))
 async def vstream(client, m: Message):
  if GRPPLAY or (m.from_user and m.from_user.is_contact) or m.outgoing:
    chat_id = m.chat.id
@@ -485,7 +485,7 @@ async def playfrom(client, m: Message):
                     )
             await hmm.delete()
             await m.reply(
-                f"➕ Adding {lmt} Songs Into The Queue\n• Click {HNDLR}playlist To View a Playlist**"
+                f"➕ Adding {lmt} Songs Into The Queue\n• Click {COMMAND_HAND_LER}playlist To View a Playlist**"
             )
         except Exception as e:
             await hmm.edit(f"**ERROR** \n`{e}`")
