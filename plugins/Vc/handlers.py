@@ -1,4 +1,4 @@
-from plugins.vc.queues import QUEUE, get_queue, pop_an_item, clear_queue
+from plugins.Vc.queues import QUEUE, get_queue, pop_an_item, clear_queue
 from info import bot, call_py
 from pytgcalls import StreamType, PyTgCalls
 from pyrogram import Client
