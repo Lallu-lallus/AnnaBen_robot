@@ -63,6 +63,6 @@ LOG_STR += f"Your Currect IMDB template is {IMDB_TEMPLATE}"
 
 
 
-
+GRPPLAY = grp
 bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="plugins"))
 call_py = PyTgCalls(bot)
