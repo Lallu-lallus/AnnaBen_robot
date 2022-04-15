@@ -386,7 +386,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size=get_size(files.file_size)
-        lallus = lallus
         f_caption=files.caption
         if CUSTOM_FILE_CAPTION:
             try:
@@ -438,7 +437,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer('No such file exist.')
         files = files_[0]
         title = files.file_name
-        lallus = lallus
         size=get_size(files.file_size)
         f_caption=files.caption
         if CUSTOM_FILE_CAPTION:
