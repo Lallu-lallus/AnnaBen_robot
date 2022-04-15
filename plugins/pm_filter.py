@@ -2,7 +2,7 @@
 import asyncio
 import re
 import ast
-
+import pytz
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
@@ -27,6 +27,18 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
 
+now = datetime.datetime.now()
+tz = pytz.timezone('asia/kolkata')
+your_now = now.astimezone(tz)
+hour = your_now.hour
+if 0 <= hour <12:
+    lallus = "Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ"
+elif 12 <= hour <15:
+    lallus = 'Gᴏᴏᴅ ᴀꜰᴛᴇʀɴᴏᴏɴ'
+elif 15 <= hour <20:
+    lallus = 'Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ'
+else:
+    lallus = 'Gᴏᴏᴅ ɴɪɢʜᴛ'
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
@@ -427,7 +439,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         f_caption=files.caption
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption=CUSTOM_FILE_CAPTION.format(m = query.from_user.mention,lallus = time,file_name=title, file_size=size, file_caption=f_caption)
+                f_caption=CUSTOM_FILE_CAPTION.format(m = query.from_user.mention,lallus = lallus,file_name=title, file_size=size, file_caption=f_caption)
             except Exception as e:
                 logger.exception(e)
                 f_caption=f_caption
