@@ -443,7 +443,7 @@ async def playfrom(client, m: Message):
     chat_id = m.chat.id
     if len(m.command) < 2:
         await m.reply(
-            f"**Use:** \n\n`{HNDLR}playfrom [chat_id/username]` \n`{HNDLR}playfrom [chat_id/username]`"
+            f"**Use:** \n\n`{COMMAND_HAND_LER}playfrom [chat_id/username]` \n`{COMMAND_HAND_LER}playfrom [chat_id/username]`"
         )
     else:
         args = m.text.split(maxsplit=1)[1]
