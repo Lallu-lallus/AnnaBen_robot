@@ -5,7 +5,7 @@ from info import bot, call_py, COMMAND_HAND_LER, contact_filter
 from plugins.Vc.handlers import skip_current_song, skip_item
 from plugins.Vc.queues import QUEUE, clear_queue
 
-@Client.on_message(contact_filter & filters.command(['skip'], prefixes=f"{HNDLR}"))
+@Client.on_message(contact_filter & filters.command(['skip'], prefixes=f"{COMMAND_HAND_LER"))
 async def skip(client, m: Message):
     await m.delete()
     chat_id = m.chat.id
