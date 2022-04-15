@@ -61,7 +61,10 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM")
 LOG_STR += f"Your Currect IMDB template is {IMDB_TEMPLATE}"
 
-
+contact_filter = filters.create(
+    lambda _, __, message:
+    (message.from_user and message.from_user.is_contact) or message.outgoing
+)
 
 GRPPLAY = grp
 bot = Client(SESSION, API_ID, API_HASH, plugins=dict(root="plugins"))
