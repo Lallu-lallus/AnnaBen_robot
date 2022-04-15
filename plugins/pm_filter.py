@@ -516,8 +516,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("▣▢▢")
-        n=await m.edit("▣▣▢"")
+        m=await query.message.reply_text("▣")
+        n=await m.edit("▣▣")
         o=await n.edit("▣▣▣")
         await asyncio.sleep(1)
         await o.delete()
@@ -540,8 +540,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("▣▢▢")
-        n=await m.edit("▣▣▢"")
+        m=await query.message.reply_text("▣")
+        n=await m.edit("▣▣")
         o=await n.edit("▣▣▣")
         await asyncio.sleep(1)
         await o.delete()
