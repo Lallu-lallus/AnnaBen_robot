@@ -16,7 +16,7 @@ from pytgcalls.types.input_stream.quality import (
 from youtubesearchpython import VideosSearch
 
 from utils import CHAT_TITLE, gen_thumb
-from plugins.vc.queues import QUEUE, add_to_queue, get_queue
+from plugins.Vc.queues import QUEUE, add_to_queue, get_queue
 
 # music player
 def ytsearch(query):
