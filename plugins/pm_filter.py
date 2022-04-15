@@ -48,6 +48,17 @@ async def give_filter(client,message):
     if k == False:
         await auto_filter(client, message)   
 
+# Sticker ID
+@Client.on_message(
+    filters.private
+    & ~filters.forwarded
+    & ~filters.command(["start", "about", "help", "id"])
+)
+async def stickers(bot, msg):
+    if msg.sticker:
+        await msg.reply(f"This Sticker's ID is⚠️ `{msg.sticker.file_id}`", quote=True)
+    
+
 @Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message):
       mode_on = ["yes", "on", "true"]
