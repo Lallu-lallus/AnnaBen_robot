@@ -40,6 +40,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+GROUP_MODE = is_enabled((environ.get('GROUP_MODE', "True")), True)
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
