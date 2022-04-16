@@ -415,7 +415,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
                 return
             else:
-                send_file = await client.send_cached_media(
+                s = await client.send_cached_media(
                     chat_id=FILE_CHANNEL_ID,
                     file_id=file_id,
                     caption=f_caption
@@ -428,8 +428,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     text = f"Hi click the below link and download the movies🍿\n\nERROR? Click the join channel button and try again \n\n{send_file.link}",
                     reply_markup = reply_markup
                 )
-                await asyncio.sleep(600)
-                await send_file.delete()
+                await asyncio.sleep(300)
+                await s.delete()
                 await bb.delete()
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
